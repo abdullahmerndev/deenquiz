@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Material Icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Variables */
+:root {
+  /*  */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, div#root {
+  height: 100%;
+  margin: 0;
+  background-color: #1a222c;
 }
+
+body {font-family: 'Montserrat', sans-serif;}
+
+.App .App__header h1 {
+  text-transform: capitalize;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+
+.navbar .navlist .nav__item:nth-child(3) a span {
+  font-size: 2.2rem;
+  padding: 0;
+  border: 2px solid #0f172a;
+  border-radius: 50%;
+}
+
+/* ############### Home page styles */
+.home .home__title {
+  text-transform: capitalize;
+} /* End of Home styles */
+
+/* ############### Statistics page styles */
+.stats {box-shadow: 0px 4px 5px #1e293b}
+.stats .stats__title {
+  /* border-bottom: 1px solid;
+  width: 100%;
+  margin: 0; */
+}
+/* End of statistics styles */
+
+/* ############### New post/question page styles */
+.newpost {box-shadow: 0px 4px 5px #1e293b}
+.form {
+  padding-bottom: 4rem;
+}
+label {color: #64748b}
+input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #cbd5e1;
+  padding: .5rem;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #94a3b8;
+}
+/* End of new post styles */
+
+/* ############### Saves page styles */
+.save {box-shadow: 0px 4px 5px #1e293b}
+/* End of saves styles */
+
+/* ############### Profile page styles */
+.profile {box-shadow: 0px 4px 5px #1e293b}
+/* End of profile page styles */
