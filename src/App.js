@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Stats from './components/Stats';
+// eslint-disable-next-line
 import New_question from './components/New_question';
 import Save from './components/Save';
 import Profile from './components/Profile';
